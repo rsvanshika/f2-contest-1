@@ -1,39 +1,43 @@
 /** @format */
 
 let arr = [
-  { id: 1, name: "john", age: "18", marks: 80 },
-  { id: 2, name: "jack", age: "20", marks: 85 },
-  { id: 3, name: "karen", age: "19", marks: 35 },
-];
-
-function PrintStudentswithMap() {
- 
+    { id: 1, name: "john", age: "18", marks: 80 },
+    { id: 2, name: "jack", age: "20", marks: 85 },
+    { id: 3, name: "karen", age: "19", marks: 35 },
+  ];
+  
+  function PrintStudentswithMap() {
+    //Write your code here , just console.log
     //print student with marks over 50
     arr.map(obj => {
         if(obj.marks > 50){
           console.log(obj);
         }
       });
-}
+  }
+  
+  function PrintStudentsbyForEach() {
+    //Write your code here , just console.log
+     //print student with marks over 50
 
-function PrintStudentsbyForEach() {
-   //print student with marks over 50
-      arr.forEach(element => {
+    arr.forEach(element => {
         if(element.marks > 50){
           console.log(element);
         }
       });
-}
 
-function addData() {
-  // add student
-     const obj = {id:4,name:"susan",age:"20",marks:45};
+  }
+  
+  function addData() {
+    //Write your code here, just console.log
+    // add student
+    const obj = {id:4,name:"susan",age:"20",marks:45};
     arr.push(obj);
     console.log(arr);
-}
- 
+  }
+  
   function removeFailedStudent() {
-    
+    //Write your code here, just console.log
     //remove student whose marks is less than 50
     for(let i = 0; i <= arr.length; i++){
         if(arr[i].marks <= 50){
@@ -42,9 +46,10 @@ function addData() {
       }
       console.log(arr);
   }
-
-function concatenateArray() {
-  // concatenate another array having info of three students
+  
+  function concatenateArray() {
+    //Write your code here, just console.log
+    // concatenate another array having info of three student
     let ids = arr.length;
     let arr1 = [
       { id: ids + 1, name: "Sia", age: "19", marks: 60 },
@@ -53,5 +58,4 @@ function concatenateArray() {
     ];
     let array = arr.concat(arr1);
     console.log(array);
-  
-}
+  }
