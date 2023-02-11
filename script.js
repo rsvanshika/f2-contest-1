@@ -31,16 +31,17 @@ function addData() {
     arr.push(obj);
     console.log(arr);
 }
-
-function removeFailedStudent() {
-   //remove student whose marks is less than 50
+ 
+  function removeFailedStudent() {
+    
+    //remove student whose marks is less than 50
     for(let i = 0; i <= arr.length; i++){
         if(arr[i].marks <= 50){
           arr.splice(i, i + 1);
         }
       }
       console.log(arr);
-}
+  }
 
 function concatenateArray() {
   // concatenate another array having info of three students
